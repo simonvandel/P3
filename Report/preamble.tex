@@ -1,0 +1,30 @@
+%!TEX root = Master.tex
+\documentclass[a4paper,12pt,english,twoside]{report}
+
+%%%% PACKAGES %%%%
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % encoding=utf8
+\usepackage{fourier} % font
+\usepackage[english]{babel} % language support - hyphenations etc.
+\usepackage{graphicx} % insertion of images
+\graphicspath{{Images/}} % folder to use for images
+
+\usepackage[marginclue,draft,inline,mode=multiuser,silent]{fixme} % fixme config
+\FXRegisterAuthor{si}{asi}{Simon}
+\FXRegisterAuthor{ka}{aka}{Kasper}
+\FXRegisterAuthor{fr}{afr}{Frederik}
+\FXRegisterAuthor{al}{aal}{Alexander}
+\FXRegisterAuthor{ch}{ach}{Christian}
+\FXRegisterAuthor{je}{aje}{Jens}
+
+\usepackage[ % citation support
+bibencoding=utf8,
+  hyperref=true,
+  backend=biber,
+  sorting=none
+  ]{biblatex}
+  \addbibresource{sources.bib}
+
+\usepackage{hyperref} % hyperlinks in pdf
+
